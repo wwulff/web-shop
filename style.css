@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: darkgrey;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 5rem;
+  list-style: none;
+}
+
+nav > li,
+a {
+  font-family: Futura, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  list-style: none;
+  text-decoration-line: none;
+}
+
+h1 {
+  font-family: Futura, Helvetica, sans-serif;
+  font-size: 50px;
+  color: white;
+  font-weight: 500;
+  padding-left: 80px;
+  padding-top: 2rem;
+}
+
+.categories ol {
+  list-style-type: none;
+}
+
+.categories li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem;
+}
+
+.categories a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.categories li,
+a:hover {
+  color: bisque;
+}
+
+h2 {
+  font-family: Futura, Helvetica, sans-serif;
+  font-family: 50px;
+  color: white;
+  font-weight: 500;
+}
+
+.ScrollUp {
+  display: flex;
+  width: 60px;
+  height: 60px;
+}

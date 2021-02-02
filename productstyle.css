@@ -1,0 +1,114 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: darkgrey;
+}
+
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  column-gap: 5rem;
+  list-style: none;
+}
+
+nav > li,
+a {
+  font-family: Futura, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #444444;
+  list-style: none;
+  text-decoration-line: none;
+}
+
+nav img {
+    width: 200px;
+    height: 200px;
+}
+
+img {
+  width: 480px;
+  height: 600px;
+  max-width: 100%;
+}
+
+.product_info {
+  background-color: #A49393  ;
+  font-family: Futura, Helvetica, sans-serif;
+  color: #444444;
+  padding: 1rem;
+  width: 500px;
+  height: 310px;
+  border-radius: 10px;
+}
+
+.product_info > h2 {
+    font-size: 40px;
+}
+
+.product_info > p {
+    font-size: 14px;
+}
+
+
+.product_info button {
+  display: block;
+  margin: 1rem;
+  width: 40%;
+  background-color: gray;
+  border-radius: 1rem;
+  font-family: Futura, Helvetica, sans-serif;
+  font-size: 20px;
+  color: gainsboro;
+  transform: translate(130px, 0px);
+}
+
+.product_info form label {
+  gap: 0.5rem;
+}
+
+.product_info select {
+  background-color: gray;
+  color: gainsboro;
+  font-family: Futura, Helvetica, sans-serif;
+  font-size: 16px;
+  border-radius: 0.5rem;
+}
+
+.info_box {
+  font-family: Futura, Helvetica, sans-serif;
+  color: #444444;
+  background-color: #A49393;
+  padding: 1rem;
+  width: 500px;
+  height: 200px;
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-columns: 50px 500px 550px 50px;
+        grid-template-rows: 100px 600px 300px;
+        grid-gap: 1rem;
+    }
+}
+
+  img {
+    grid-area: 2 / 2 / 3 / 3;
+    transform: translate(10px);
+  }
+
+  .product_info {
+    grid-area: 2 / 3 / 3 / 4;
+    transform: translate(80px, 50px);
+  }
+
+  .info_box {
+      grid-area:  3 / 2 / 4 / -1;
+  }
+}
