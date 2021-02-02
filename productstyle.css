@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -7,19 +8,23 @@ body {
   background-color: darkgrey;
 }
 
+nav {
+  background-color: gray;
+}
 
 nav > ul {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   column-gap: 5rem;
   list-style: none;
+  margin: 0;
 }
 
 nav > li,
 a {
   font-family: Futura, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 400;
   color: #444444;
   list-style: none;
@@ -27,8 +32,8 @@ a {
 }
 
 nav img {
-    width: 200px;
-    height: 200px;
+  width: 190px;
+  height: 190px;
 }
 
 img {
@@ -38,23 +43,22 @@ img {
 }
 
 .product_info {
-  background-color: #A49393  ;
+  background-color: #a49393;
   font-family: Futura, Helvetica, sans-serif;
   color: #444444;
   padding: 1rem;
   width: 500px;
-  height: 310px;
+  height: 480px;
   border-radius: 10px;
 }
 
 .product_info > h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .product_info > p {
-    font-size: 14px;
+  font-size: 14px;
 }
-
 
 .product_info button {
   display: block;
@@ -83,24 +87,48 @@ img {
 .info_box {
   font-family: Futura, Helvetica, sans-serif;
   color: #444444;
-  background-color: #A49393;
+  background-color: #a49393;
   padding: 1rem;
   width: 500px;
   height: 200px;
 }
 
-@media screen and (min-width: 1000px) {
-    main {
-        display: grid;
-        grid-template-columns: 50px 500px 550px 50px;
-        grid-template-rows: 100px 600px 300px;
-        grid-gap: 1rem;
-    }
+.fotr {
+  display: flex;
+  background-color: gray;
+  margin: 0;
+  text-align: center;
+  font-family: Futura, Helvetica, sans-serif;
+  overflow: hidden;
+  vertical-align: bottom;
+  justify-content: center;
+  gap: 100px;
 }
+
+.fotr li,
+a {
+  font-size: 14px;
+  color: #444444;
+  list-style: none;
+  line-height: 25px;
+}
+
+.fotr h4 {
+  color: #444444;
+  margin: 0.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    display: grid;
+    grid-template-columns: 50px 500px 550px 50px;
+    grid-template-rows: 100px 600px 100px;
+    grid-column-gap: 2rem;
+  }
 
   img {
     grid-area: 2 / 2 / 3 / 3;
-    transform: translate(10px);
+    transform: translate(20px);
   }
 
   .product_info {
@@ -109,6 +137,6 @@ img {
   }
 
   .info_box {
-      grid-area:  3 / 2 / 4 / -1;
+    grid-area: 3 / 2 / 4 / -1;
   }
 }
