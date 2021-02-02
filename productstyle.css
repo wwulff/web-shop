@@ -93,6 +93,14 @@ img {
   height: 200px;
 }
 
+.ScrollUp {
+  display: block;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  padding: 20px;
+}
+
 .fotr {
   display: flex;
   background-color: gray;
@@ -103,13 +111,12 @@ img {
   vertical-align: bottom;
   justify-content: center;
   gap: 100px;
+  list-style: none;
 }
 
-.fotr li,
-a {
+.fotr li a {
   font-size: 14px;
   color: #444444;
-  list-style: none;
   line-height: 25px;
 }
 

@@ -7,64 +7,117 @@ body {
   background-color: darkgrey;
 }
 
+nav {
+  background-color: gray;
+}
+
 nav > ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   column-gap: 5rem;
   list-style: none;
+  margin: 0;
 }
 
 nav > li,
 a {
   font-family: Futura, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 34px;
   font-weight: 400;
-  color: white;
+  color: #444444;
   list-style: none;
   text-decoration-line: none;
 }
 
+nav img {
+  width: 190px;
+  height: 190px;
+}
+
 h1 {
+  text-align: center;
   font-family: Futura, Helvetica, sans-serif;
   font-size: 50px;
-  color: white;
+  color: #444444;
   font-weight: 500;
-  padding-left: 80px;
   padding-top: 2rem;
 }
 
-.categories ol {
-  list-style-type: none;
-}
-
-.categories li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.1rem;
-}
-
-.categories a {
-  text-decoration: none;
-  display: block;
+.categories {
   width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: wrap;
 }
 
-.categories li,
-a:hover {
-  color: bisque;
+.box {
+  width: 15%;
+  height: 200px;
+  margin: 20px;
+  box-sizing: border-box;
+  background-color: #a49393;
 }
 
-h2 {
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .box {
+    width: 90%;
+  }
+}
+
+.box h2 {
   font-family: Futura, Helvetica, sans-serif;
-  font-family: 50px;
-  color: white;
-  font-weight: 500;
+  font-size: 60px;
+  margin: 0;
+  color: #444444;
+  padding-left: 16px;
+}
+
+.box ol {
+  list-style: none;
+  margin-top: 0;
+}
+
+.box li a {
+  line-height: 2rem;
+  font-size: 20px;
 }
 
 .ScrollUp {
+  display: block;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  padding: 20px;
+}
+
+.fotr {
   display: flex;
-  width: 60px;
-  height: 60px;
+  background-color: gray;
+  margin: 0;
+  text-align: center;
+  font-family: Futura, Helvetica, sans-serif;
+  overflow: hidden;
+  vertical-align: bottom;
+  justify-content: center;
+  gap: 100px;
+  list-style: none;
+}
+
+.fotr li a {
+  font-size: 14px;
+  color: #444444;
+  line-height: 25px;
+}
+
+h4 {
+  color: #444444;
+  margin: 0.5rem;
 }
