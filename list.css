@@ -1,0 +1,68 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: darkgrey;
+}
+
+nav {
+  background-color: gray;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 5rem;
+  list-style: none;
+  margin: 0;
+}
+
+nav > li,
+a {
+  font-family: Futura, Helvetica, sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  color: #444444;
+  list-style: none;
+  text-decoration-line: none;
+}
+
+nav img {
+  width: 190px;
+  height: 190px;
+}
+
+.ScrollUp {
+  display: block;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  padding: 20px;
+}
+
+.fotr {
+  display: flex;
+  background-color: gray;
+  margin: 0;
+  text-align: center;
+  font-family: Futura, Helvetica, sans-serif;
+  overflow: hidden;
+  vertical-align: bottom;
+  justify-content: center;
+  gap: 100px;
+  list-style: none;
+}
+
+.fotr li a {
+  font-size: 14px;
+  color: #444444;
+  line-height: 25px;
+}
+
+h4 {
+  color: #444444;
+  margin: 0.5rem;
+}
