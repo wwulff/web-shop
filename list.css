@@ -97,7 +97,20 @@ h1 {
   font-family: Futura, Helvetica, sans-serif;
   color: black;
   padding: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
+}
+
+.content article.soldOut::after {
+  content: "Out of stock";
+  position: absolute;
+  background-color: gray;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: Futura, Helvetica, sans-serif;
+  color: black;
+  padding: 0.5rem;
+  margin-top: 4.2rem;
+  opacity: 0.5;
 }
 
 .content article.sale::before {
@@ -133,7 +146,7 @@ h1 {
   display: flex;
   background-color: gray;
   margin: 0;
-  text-align: center;
+  text-align: left;
   font-family: Futura, Helvetica, sans-serif;
   overflow: hidden;
   vertical-align: bottom;
@@ -148,7 +161,35 @@ h1 {
   line-height: 25px;
 }
 
+.fotr p {
+  font-size: 14px;
+  margin: 0;
+  color: black;
+  opacity: 0.8;
+  font-style: italic;
+}
+
 h4 {
   color: #444444;
   margin: 0.5rem;
+}
+
+h5 {
+  color: #444444;
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  nav > ul {
+    column-gap: 4rem;
+  }
+
+  nav > li,
+  a {
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
 }

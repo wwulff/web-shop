@@ -105,7 +105,7 @@ img {
   display: flex;
   background-color: gray;
   margin: 0;
-  text-align: center;
+  text-align: left;
   font-family: Futura, Helvetica, sans-serif;
   overflow: hidden;
   vertical-align: bottom;
@@ -120,7 +120,20 @@ img {
   line-height: 25px;
 }
 
-.fotr h4 {
+.fotr p {
+  font-size: 14px;
+  margin: 0;
+  color: black;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+h4 {
+  color: #444444;
+  margin: 0.5rem;
+}
+
+h5 {
   color: #444444;
   margin: 0.5rem;
 }
@@ -145,5 +158,29 @@ img {
 
   .info_box {
     grid-area: 3 / 2 / 4 / -1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav > ul {
+    column-gap: 4rem;
+  }
+
+  nav > li,
+  a {
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 40px;
   }
 }
