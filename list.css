@@ -35,6 +35,92 @@ nav img {
   height: 190px;
 }
 
+h1 {
+  font-family: Futura, Helvetica, sans-serif;
+  color: #444444;
+  font-size: 60px;
+  margin-left: 4rem;
+}
+
+.filter {
+  list-style: none;
+  font-family: Futura, Helvetica, sans-serif;
+  color: #444444;
+  font-size: 14px;
+  margin-left: 4rem;
+}
+
+.filter a {
+  font-size: 14px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 380px));
+  gap: 3rem;
+  margin-left: 4rem;
+}
+
+.content article h2 {
+  font-family: Futura, Helvetica, sans-serif;
+  color: #444444;
+  font-weight: 500;
+  font-size: 20px;
+  flex-grow: 2;
+}
+
+.product p {
+  font-family: Futura, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+.discount p {
+  color: firebrick;
+}
+
+.content article {
+  display: flex;
+  flex-direction: column;
+}
+
+.content article.soldOut img {
+  opacity: 50%;
+}
+
+.content article.soldOut::before {
+  content: "Out of stock";
+  position: absolute;
+  background-color: gray;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: Futura, Helvetica, sans-serif;
+  color: black;
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
+.content article.sale::before {
+  content: "- 50%";
+  position: absolute;
+  background-color: gray;
+  opacity: 50%;
+  font-size: 16px;
+  color: maroon;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  font-family: Futura, Arial, Helvetica, sans-serif;
+}
+
+.content article.product a {
+  font-size: 18px;
+  text-align: center;
+  align-self: flex-end;
+  transform: translate(0px, -24px);
+  background-color: gainsboro;
+  width: 140px;
+}
+
 .ScrollUp {
   display: block;
   margin: auto;
