@@ -13,7 +13,6 @@ function handleProductList(data) {
 }
 
 function showProduct(product) {
-  console.log(product);
   //grab the template
   const template = document.querySelector("#productTemplate").content;
   //clone it
