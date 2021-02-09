@@ -43,13 +43,16 @@ main {
   list-style-type: none;
   display: flex;
   font-family: Futura, Helvetica, sans-serif;
-  font-size: 16px;
+}
+
+.breadcrumbs > li a {
+  font-size: 19px;
 }
 .breadcrumbs li::after {
   display: inline-block;
-  width: 15px;
-  height: 20px;
-  margin: 0 10px;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
   content: "";
   transition: all 0.3s;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 14"><path fill="none" stroke="white" d="M.8 12.87l7.5-6-7.5-6"></path></svg>');
