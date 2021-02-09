@@ -35,6 +35,13 @@ nav img {
   height: 190px;
 }
 
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+  gap: 2rem;
+  margin-left: 4rem;
+}
+
 h1 {
   font-family: Futura, Helvetica, sans-serif;
   color: #444444;
@@ -54,19 +61,17 @@ h1 {
   font-size: 14px;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 380px));
-  gap: 3rem;
-  margin-left: 4rem;
-}
-
-.content article h2 {
+main article h2 {
   font-family: Futura, Helvetica, sans-serif;
   color: #444444;
   font-weight: 500;
   font-size: 20px;
   flex-grow: 2;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
 }
 
 .product p {
@@ -79,16 +84,11 @@ h1 {
   color: firebrick;
 }
 
-.content article {
-  display: flex;
-  flex-direction: column;
-}
-
-.content article.soldOut img {
+main article.soldOut img {
   opacity: 50%;
 }
 
-.content article.soldOut::before {
+main article.soldOut::before {
   content: "Out of stock";
   position: absolute;
   background-color: gray;
@@ -100,20 +100,7 @@ h1 {
   margin-top: 4rem;
 }
 
-.content article.soldOut::after {
-  content: "Out of stock";
-  position: absolute;
-  background-color: gray;
-  font-size: 20px;
-  font-weight: 300;
-  font-family: Futura, Helvetica, sans-serif;
-  color: black;
-  padding: 0.5rem;
-  margin-top: 4.2rem;
-  opacity: 0.5;
-}
-
-.content article.sale::before {
+main article.sale::before {
   content: "- 50%";
   position: absolute;
   background-color: gray;
@@ -125,13 +112,27 @@ h1 {
   font-family: Futura, Arial, Helvetica, sans-serif;
 }
 
-.content article.product a {
+main article.product a {
   font-size: 18px;
   text-align: center;
   align-self: flex-end;
   transform: translate(0px, -24px);
   background-color: gainsboro;
   width: 140px;
+}
+
+main article .discount,
+main article .price span {
+  display: none;
+}
+
+main article.sale .price span {
+  display: initial;
+}
+
+main article.sale .discount {
+  display: flex;
+  justify-content: space-between;
 }
 
 .ScrollUp {

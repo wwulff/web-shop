@@ -10,9 +10,6 @@
     <header>
       <nav>
         <ul>
-          <img src="images/logo.svg" alt="handmade logo by Caroline Wulff" />
-        </ul>
-        <ul>
           <li><a href="overview.html">WOMEN</a></li>
           <li><a href="overview.html">MEN</a></li>
           <li><a href="overview.html">KIDS</a></li>
@@ -20,60 +17,74 @@
       </nav>
     </header>
 
+    <h1>Puma</h1>
+    <li class="filter">
+      <a href="overview.html">Sort by: Popular Brands</a>
+      > Puma
+    </li>
+
     <main>
-      <h1>Puma</h1>
-      <li class="filter">
-        <a href="overview.html">Sort by: Popular Brands</a>
-        > Puma
-      </li>
-
-      <div class="content">
+      <template id="productTemplate">
         <article class="product">
-          <img src="images/backpack.webp" alt="text about resource here" />
+          <img
+            class="productImg"
+            src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+            alt="text about resource here"
+          />
           <h2>Deck Navy Blue Backpack</h2>
-          <p>1.299 DKK</p>
-          <a href="product.html">Quick Shop</a>
-        </article>
-
-        <article class="product soldOut sale">
-          <img src="images/backpack_puma.webp" alt="text about resource here" />
-          <h2>Big Cat Backpack Black</h2>
-          <p>Before 1.299 DKK</p>
+          <p class="subtle">T-shirts</p>
+          <p class="price">
+            <span>prev.</span>
+            1595 DKK
+          </p>
           <div class="discount">
             <p>Now 649,50 DKK</p>
           </div>
           <a href="product.html">Quick Shop</a>
         </article>
+      </template>
+      <!--
+      <article class="product soldOut sale">
+        <img src="images/backpack_puma.webp" alt="text about resource here" />
+        <h2>Big Cat Backpack Black</h2>
+        <p class="price">
+          <span>prev.</span>
+          1.299 DKK
+        </p>
+        <div class="discount">
+          <p>Now 649,50 DKK</p>
+        </div>
+        <a href="product.html">Quick Shop</a>
+      </article>
+      
+      <article class="product">
+        <img src="images/mens_shirt.webp" alt="text about resource here" />
+        <h2>Puma Grey Leaping Cat T-shirt</h2>
+        <p class="price">2.495 DKK</p>
+        <a href="product.html">Quick Shop</a>
+      </article>
 
-        <article class="product">
-          <img src="images/mens_shirt.webp" alt="text about resource here" />
-          <h2>Puma Grey Leaping Cat T-shirt</h2>
-          <p>2.495 DKK</p>
-          <a href="product.html">Quick Shop</a>
-        </article>
+      <article class="product sale">
+        <img src="images/product_shirt.webp" alt="text about resource here" />
+        <h2>Mean Team India Cricket Jersey</h2>
+        <p class="price">
+          <span>prev.</span>
+          2.495 DKK
+        </p>
+        <div class="discount">
+          <p>Now 1.247,50 DKK</p>
+        </div>
+        <a href="product.html">Quick Shop</a>
+      </article>
 
-        <article class="product sale">
-          <img src="images/product_shirt.webp" alt="text about resource here" />
-          <h2>Mean Team India Cricket Jersey</h2>
-          <p>Before 2.495 DKK</p>
-          <div class="discount">
-            <p>Now 1.247,50 DKK</p>
-          </div>
-          <a href="product.html">Quick Shop</a>
-        </article>
-
-        <article class="product soldOut">
-          <img src="images/t-shirt.webp" alt="text about resource here" />
-          <h2>Grey Solid Round Neck T-shirt</h2>
-          <p>799 DKK</p>
-          <a href="product.html">Quick Shop</a>
-        </article>
-      </div>
+      <article class="product soldOut">
+        <img src="images/t-shirt.webp" alt="text about resource here" />
+        <h2>Grey Solid Round Neck T-shirt</h2>
+        <p class="price">799 DKK</p>
+        <a href="product.html">Quick Shop</a>
+      </article>
+      -->
     </main>
-
-    <a class="Scroll" href="#top">
-      <img class="ScrollUp" src="arrow.svg" alt="arrow svg clickable" />
-    </a>
 
     <footer class="fotr">
       <section class="foot_three">
@@ -104,5 +115,6 @@
         <li><a href="url here">FAQ</a></li>
       </section>
     </footer>
+    <script src="productlist.js"></script>
   </body>
 </html>
