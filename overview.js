@@ -8,7 +8,7 @@ letterArray.forEach(handleLetter);
 
 function handleLetter(letter) {
   createNavLink(letter);
-  //creat section
+  //create section
   createBrandSection(letter);
 }
 

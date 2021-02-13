@@ -18,7 +18,6 @@ function handleProductList(data) {
 }
 
 function showProduct(product) {
-  //console.log("I am" + product.productdisplayname + "and I have id" + product.id);
   //grab the template
   const template = document.querySelector("#productTemplate").content;
   //clone it

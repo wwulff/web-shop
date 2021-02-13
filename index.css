@@ -12,13 +12,11 @@ body {
   margin-top: 20rem;
 }
 
-.index li {
+.index li,
+a {
   font-family: Futura, Helvetica, sans-serif;
   font-size: 34px;
   font-weight: 400;
-}
-
-.index a {
   text-decoration-line: none;
   color: #444444;
 }
