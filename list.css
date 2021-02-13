@@ -135,14 +135,6 @@ main article.sale .discount {
   justify-content: space-between;
 }
 
-.ScrollUp {
-  display: block;
-  margin: auto;
-  width: 70px;
-  height: 70px;
-  padding: 20px;
-}
-
 .fotr {
   display: flex;
   background-color: gray;
@@ -192,5 +184,10 @@ h5 {
 
   h1 {
     font-size: 40px;
+  }
+
+  .fotr {
+    gap: 10px;
+    flex-direction: column;
   }
 }

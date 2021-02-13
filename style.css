@@ -39,6 +39,11 @@ h1 {
   padding-top: 2rem;
 }
 
+.letterLinks a,
+.categories h2 {
+  text-transform: uppercase;
+}
+
 .letterGroup {
   font-family: Futura, Helvetica, sans-serif;
   color: #444444;

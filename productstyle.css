@@ -30,11 +30,6 @@ a {
   text-decoration-line: none;
 }
 
-nav img {
-  width: 190px;
-  height: 190px;
-}
-
 main {
   display: grid;
 }
@@ -155,5 +150,58 @@ h5 {
 
   .productinfo {
     transform: translate(-90px, 100px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav > ul {
+    column-gap: 2rem;
+  }
+
+  nav > li,
+  a {
+    font-size: 24px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-flow: column;
+  }
+
+  main .productinfo {
+    width: auto;
+    height: auto;
+  }
+
+  .productinfo > h2 {
+    font-size: 30px;
+  }
+
+  .breadcrumbs {
+    margin: 0;
+    margin-left: -35px;
+    font-size: 14px;
+  }
+
+  .breadcrumbs > li a {
+    font-size: 14px;
+  }
+
+  .breadcrumbs li::after {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 0px;
+    content: "";
+    transition: all 0.3s;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 14"><path fill="none" stroke="white" d="M.8 12.87l7.5-6-7.5-6"></path></svg>');
+    background-repeat: no-repeat;
+    /* url('data:image/svg+xml;utf8,<svg class="svg-arrowRight" viewBox="0 0 9 14"><path fill="none" stroke="#979797" d="M.8 12.87l7.5-6-7.5-6"></path></svg>'); */
+  }
+
+  .fotr {
+    gap: 10px;
+    flex-direction: column;
   }
 }
