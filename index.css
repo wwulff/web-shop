@@ -20,3 +20,17 @@ a {
   text-decoration-line: none;
   color: #444444;
 }
+
+@media screen and (max-width: 800px) {
+  .index ul {
+    flex-direction: column;
+    margin-top: 14rem;
+    row-gap: 20px;
+  }
+
+  .index li,
+  a {
+    font-size: 26px;
+    text-align: center;
+  }
+}
